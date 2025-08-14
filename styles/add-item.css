@@ -30,7 +30,7 @@
   background-color:  rgb(50, 57, 37);
 }
 
-@media screen and (max-width: 24rem) {
+@media screen and (max-width: 41rem) {
   .add-item {   
     display: inline-block;
     align-items: center;
