@@ -4,21 +4,31 @@ section {
   display: inline-block;   
   background-image: url(../assets/compras.jpg);
 }
-.topo {
-  cursor: pointer;
- }
  
 header {
-
-  .part-two {
-  display: grid;
-
+   width: 100%;  
    }
-   }
+
+  .logo img{
+    width: 20rem;  
+    margin-left: 0;
+    margin-right: auto; 
+  }
 
 @media screen and (max-width: 24rem){
   header {  
-  & .part-two {
-  margin-top: 1rem;
-  }}    
+  width: 100%;
+  padding: 2rem; 
+}    
+
+  section {  
+  width: 100%;
+  padding: 0 2rem 1rem; 
+  display: inline-block;   
+  background-image: url(../assets/compras.jpg);
+}
+
+  .logo img{ 
+    width: 16rem;   
+  }
   }

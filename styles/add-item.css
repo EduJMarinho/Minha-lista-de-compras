@@ -1,5 +1,5 @@
   .add-item { 
-    margin-top: 2.75rem; 
+    margin-top: 1rem; 
 
    & input {
       width: 28.2rem;
@@ -35,17 +35,17 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
+    margin-top: .1rem; 
     
    & input {
-      width: 326px;
+      width: 300px;
       margin: 0;   
       margin-bottom: .5rem;
     }
 
   & button {
     margin: 0;
-    width: 326px;    
-  }
-  }
-  }
-
+    width: 300px;    
+  } 
+ }
+}
