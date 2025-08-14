@@ -1,0 +1,65 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {  
+  /* background */
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
+
+   /* conteudo */
+  --content-primary: #080B12;
+  --content-secondary:#374151;
+  --content-tertiary:#9CA3AF;
+
+    /* bordas */
+  --always-white:#FFFFFF;
+  --border-primary:#D1D5DB;
+  --border-hover:#B9C2D0;
+  
+    /* fontes */
+  --ff-base: 'Inter', sans-serif;
+
+  --title: 800 1.5rem var(--ff-base);
+  --label: 600 1rem var(--ff-base);
+  --paragraph: 500 1rem var(--ff-base); 
+  --link: 500 .875rem  var(--ff-base);  
+}
+
+/* Estilo para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: .001rem; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-primary); 
+  border-radius: 0.001rem;
+}
+
+/* Estilo para navegador Firefox) */
+body {
+  scrollbar-width: thin; /* "auto", "thin" ou "none" */
+  scrollbar-color: var(--border-primary) transparent;
+
+  background-color: var(--background-primary);   
+  justify-content: center;
+  display: flex;
+  align-items: center;  
+}
+
+/* Garante que mesmo em modo escuro, mantenha claro */
+@media (prefers-color-scheme: dark) {
+  * {
+    color-scheme: light !important;  }
+
+  body {
+    
+  }
+}
+

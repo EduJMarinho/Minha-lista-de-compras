@@ -1,0 +1,51 @@
+  .add-item { 
+    margin-top: 2.75rem; 
+
+   & input {
+      width: 28.2rem;
+      height: 2.75rem;
+      font-family: var(--ffbase);
+      font: var(--label);
+      font-size: 1rem;
+      border-radius: .5rem;
+      padding-left: 1rem;
+      border: .2rem solid var(--border-primary);
+      }
+
+  & button {
+    margin-left: 1rem;
+    width: 10rem;
+    height: 2.75rem; 
+    border-radius: .5rem;
+    color: #FFFFFf;
+    background-color: rgb(79, 85, 15);
+    border: none;
+    font: var(--link);    
+    transition: .4s;
+    cursor: pointer;
+    }
+  }
+
+#item-add:hover {
+  background-color:  rgb(50, 57, 37);
+}
+
+@media screen and (max-width: 24rem) {
+  .add-item {   
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
+   & input {
+      width: 326px;
+      margin: 0;   
+      margin-bottom: .5rem;
+    }
+
+  & button {
+    margin: 0;
+    width: 326px;    
+  }
+  }
+  }
+

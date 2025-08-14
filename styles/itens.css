@@ -1,0 +1,84 @@
+.content {
+flex-direction: column;
+font-family: 'Inter';  
+gap: 1rem;   
+}
+ 
+#to-list {  
+display: flex;   
+flex-direction: column; 
+gap: 1rem;
+list-style-type: none; 
+padding-top: 2rem;
+text-transform: capitalize;
+width: 100%;
+}
+
+#to-list li {
+cursor: pointer;
+font-family: var(--ffbase);
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: left;
+gap: 1rem;
+background-color: var(--background-secondary);
+border-radius: .5rem;  
+padding: .6rem;  
+border: .2rem solid var(--border-primary);
+}
+
+.delete-button {
+  background-image: url(../assets/lixeira.png);
+  background-size: contain;
+  background-repeat: no-repeat;  
+  border: none;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+  background-color: var(--background-secondary);
+  margin-left: auto;
+  border-radius: .6rem;
+}
+
+.delete-button:hover {
+background-image: url(../assets/lixeira-hover.png);
+}
+
+.click-button {
+  background-image: url(../assets/click-Default.svg);
+   background-size: contain;
+  background-repeat: no-repeat;  
+  border: none;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+  background-color: var(--background-secondary); 
+   border-radius: .6rem; 
+}
+
+.click-button:checked {
+background-image: url(../assets/click-selected.svg);
+}
+
+#footer {
+  display: flex; 
+  width: 100%;
+  font-family: var(--ffbase);
+  font: var(--label);
+  color: var(--always-white);    
+  border-radius: .5rem;
+  padding: .6rem;
+  border: none;  
+  align-items: center;
+  justify-content: space-between;     
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+#footer.show {
+opacity: 1;
+}
+
+.topo {  
+  width: 5rem;
+}
+
+

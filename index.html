@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>App Lista de compras</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="./assets/Edu.png">
+  </head>
+              <!-- Deus é Amor e Paz -->
+  <body >   
+  <section>
+  <header>
+
+    <div class="logo flex items-center">
+      <img  src="assets/Lista.png" alt="Logo QuickList">
+    </div>
+
+    <div class="part-two gap1">   
+    </div>
+  </header>
+
+    <form>
+      <div class="add-item flex">  
+        <label for="item"></label>
+        <input  type="text" id="input-item" placeholder="Adicione um novo item"/>
+
+        <button onclick="newTask()" id="item-add" title="Clique para adicionar o produto">Adicionar item</button>
+      </div>      
+
+      <div class="content flex">  
+         <ul id="to-list"></ul>
+      </div>
+     
+      <div id="footer">
+        <img src="assets/Alert.svg" alt="">
+      <p id="item-delete">O item foi removido da lista</p>
+        <img src="assets/x.svg" alt="">
+      </div>
+      <img id="scroll-to-top" class="topo" src="assets/voltar.png" alt="Voltar ao topo" >
+
+    </form>
+  </section>
+ <script src="./script.js"></script> 
+</body>
+</html>
+
+<!-- Deselvolvido por Eduardo José Marinho - 13/07/25 -->
